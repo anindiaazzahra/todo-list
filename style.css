@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans", sans-serif;
+}
+
+.tittle {
+    font-size: 40px;
+    font-weight: 700;
+    color: salmon;
+    letter-spacing: 1px;
+    margin: 30px 0;
+}
+
+body {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.todo-list {
+    width: 700px;
+    padding: 20PX;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: rgb(240, 221, 196);
+}
+
+.list-head {
+    display: grid;
+    grid-template-columns: 5fr 1fr .5fr;
+    gap: 10px;
+}
+
+.input-task {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+    font-size: 16px;
+    outline: none;
+}
+
+.add-task {
+    border: none;
+    border-radius: 5px;
+    background-color: salmon;
+    outline: none;
+    font-size: 16px;
+    color: whitesmoke;
+    cursor: pointer;
+    opacity: .6;
+    pointer-events: none;
+}
+
+.search-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: salmon;
+    outline: none;
+    font-size: 15px;
+    color: whitesmoke;
+    cursor: pointer;
+    opacity: .6;
+    pointer-events: none;
+}
+
+.add-task.active, .search-btn.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.tasks {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.task {
+    padding:  10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task p {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+}
+
+.task.completed p {
+    text-decoration: line-through;
+    color: black;
+}
+
+.edit-task {
+    margin-left: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid salmon;
+    font-size: 16px;
+    outline: none;
+}
+
+.task-btn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.task-btn i {
+    color: salmon;
+    font-size: 18px;
+    cursor: pointer;
+}
